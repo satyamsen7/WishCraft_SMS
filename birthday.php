@@ -34,7 +34,7 @@ function sendBirthdayMessage($name, $number) {
         CURLOPT_CUSTOMREQUEST => "POST",
         CURLOPT_POSTFIELDS => json_encode($postData),
         CURLOPT_HTTPHEADER => [
-            "authorization: YOUR_FAST2SMS_API",
+            "authorization: YOUR_FAST2SMS_API", // FAST2SMS API
             "Content-Type: application/json"
         ]
     ]);
